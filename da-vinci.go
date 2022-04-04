@@ -263,17 +263,17 @@ func main() {
 				// refresh token
 				err = acct.getAuthToken(c)
 				if err != nil {
-					log.Fatalf("failed to get auth token: %v", err)
+					log.Fatalf("\033[31mfailed to get auth token: %v\033[0m", err)
 					continue
 				}
 			}
 
 			err = acct.setPixel(up.Point, colorMap[up.Color.Name])
 			if err != nil {
-				log.Printf("%s : %v", acct.Username, err)
+				log.Printf("\033[31m%s : %v\033[0m", acct.Username, err)
 				continue
 			}
-			log.Printf("%s : Wrote %s to {%d,%d}", acct.Username, up.Color.Name, up.Point.X, up.Point.Y)
+			log.Printf("\033[32m%s : Wrote %s to {%d,%d}\033[0m", acct.Username, up.Color.Name, up.Point.X, up.Point.Y)
 			time.Sleep(time.Second)
 			break
 		}
