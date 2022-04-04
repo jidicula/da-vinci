@@ -27,5 +27,18 @@ and fill in values.
 Run the app:
 
 ```
+go run . example.png
+```
+
+or
+
+```
+go run github.com/jidicula/da-vinci@latest example.png
+```
+
+or
+
+```
+go install github.com/jidicula/da-vinci@latest
 da-vinci example.png
 ```

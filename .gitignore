@@ -7,7 +7,7 @@
 da-vinci
 
 # Config
-example.json
+config.json
 
 # Test binary, built with `go test -c`
 *.test
