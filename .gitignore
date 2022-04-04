@@ -4,6 +4,10 @@
 *.dll
 *.so
 *.dylib
+da-vinci
+
+# Config
+example.json
 
 # Test binary, built with `go test -c`
 *.test

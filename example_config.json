@@ -1,0 +1,16 @@
+{"client":
+ {"clientID": "clientID",
+  "clientSecret": "clientSecret"
+ },
+ "accounts": [
+     {"username": "first account password",
+      "password": "first account password"
+     },
+     {"username": "2nd account password",
+      "password": "2nd account password"
+     }
+ ],
+ "X":0,
+ "Y":0,
+ "SleepSeconds": 5
+}
