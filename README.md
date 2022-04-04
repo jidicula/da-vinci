@@ -15,6 +15,7 @@ Steps:
 1. Visit https://www.reddit.com/prefs/apps
 2. Click "create (another) app" button at very bottom
 3. Select the "script" option and fill in the fields with anything
+4. Add other usernames as developers to the app.
 
 # Usage
 
