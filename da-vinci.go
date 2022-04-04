@@ -207,14 +207,6 @@ func decodeImg(filePath string) (image.Image, error) {
 	return png.Decode(f)
 }
 
-// getMisplacedPixels returns a slice of Points that need correction.
-func getMisplacedPixels(img image.Image, at image.Point) ([]rplace.Update, error) {
-	ctx := morecontext.ForSignals()
-	defer ctx.Done()
-	c := rplace.Client{}
-	return c.GetDiff(ctx, img, at)
-}
-
 // getUpdateChan returns a channel of pixel updates.
 func getUpdateChan(img image.Image, at image.Point) (chan rplace.Update, error) {
 	ctx := morecontext.ForSignals()
